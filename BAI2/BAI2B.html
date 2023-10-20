@@ -1,0 +1,38 @@
+<!-- Combinator selector tạm dịch là selector kết hợp là chọn ra element có mối quan hệ con cháu với mối quan hệ khác -->
+<head></head>
+<style>
+    p{
+        background-color: red;
+    }
+
+
+    div ~ p {  
+        background-color: transparent;
+    }
+     
+     div p {
+        background-color: transparent;
+     }
+</style>
+<!-- trong tình huống này div đóng vai trò tổ tiên của p  -->
+<!-- trong p có thể dùng class -->
+<!-- nếu class thì dùng div .to_mau  --> 
+<!-- nếu class trong p thiếu class trong div thì nó sẽ kh chạy  -->
+<!-- nếu muốn loại bỏ thằng 5 thì dùng > vd: div > p nó chỉ lấy con trong div kh lấy thằng cháu  -->
+<!-- mối quan hệ anh em thằng nào được nêu trước thằng đó là anh -->
+<p>1</p>
+
+<div class="to_mau">
+    <p class="to_mau">2</p>
+    <p class="to_mau">3</p>
+    <p class="to_mau">4</p>
+    <b>
+        <p>5</p>
+    </b>
+</div>
+
+<p>6</p>
+<p>7</p>
+
+<!-- div + p thì nó sẽ đổi màu thằng kế tiếp đó là thằng số 6 -->
+<!-- div ~ p là select những thằng phía sau div đó là 6 7  -->

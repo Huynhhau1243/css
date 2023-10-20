@@ -1,0 +1,27 @@
+<!-- Pseudo-class cho phép ta có thể select vào element khi chúng đang trong 1 trạng thái xác định -->
+<head></head>
+<style>
+    button:hover {
+        background-color: red;
+    }
+    input:focus {
+        background-color: red;
+    }
+    p:first-child{
+        background-color: red;
+    }
+</style> 
+
+<button>BUTTON</button><br><br>
+<input>
+<div> 
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+</div>
+
+
+<!-- để làm nút button di chuột vào mới có màu đỏ ta dùng :hover -->
+<!-- input dùng focus nó sẽ hiện màu đỏ khi bấm chuột bên trong  -->
+<!-- first-child là khai báo thằng nào là con đầu tiên vd div và p thì p nằm trong sẽ là con  -->
+<!-- nó chỉ đổi màu thằng anh đầu tiên trong phần con   -->

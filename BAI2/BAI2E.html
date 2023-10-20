@@ -1,0 +1,26 @@
+<!-- Specificity là 1 cái gì đó cụ thể trong css là độ ưu tiên chọn selec để style theo  -->
+<head></head>
+<style>
+    #website {
+        background-color: red;
+    }
+    .social {
+        background-color: blue;
+    }
+</style>
+
+<div>Huỳnh Hậu coder</div>
+<div id="website" class="social">
+    http://HuynhHaucoder.com/
+</div> 
+<p>Chào mừng mọi người đã đến với trang của tôi </p>
+
+
+id sẽ được đổi trước vì id > class nên chỉ đổi mỗi id
+<!-- nếu style trong div được gọi là inline css -->
+khi ta chạy code nó chỉ nhận thằng inline css 
+mức độ ưu tiên : universal :0 
+                 tag : 1
+                 class : 10
+                 id : 100 
+                 inline : 1000
